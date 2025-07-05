@@ -8,4 +8,17 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
+  resolve: {
+    alias: {
+      process: "process/browser",
+      util: "util"
+    },
+  },
+  define: {
+    'process.env': {},
+    global: 'window',
+  },
+  optimizeDeps: {
+    include: ["simple-peer"]
+  }
 })

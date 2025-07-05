@@ -1,3 +1,5 @@
+// Import the global polyfill first
+import './utils/globalPolyfill.js';
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
